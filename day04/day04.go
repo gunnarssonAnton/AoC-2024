@@ -69,35 +69,8 @@ func part1(grid [][]rune) {
 	fmt.Println(tot)
 }
 
-// 2545
-func getPatterns() [][][]rune {
-	patterns := [][][]rune{
-		{
-			{'M', '.', 'S'},
-			{'.', 'A', '.'},
-			{'M', '.', 'S'},
-		},
-		{
-			{'M', '.', 'M'},
-			{'.', 'A', '.'},
-			{'S', '.', 'S'},
-		},
-		{
-			{'S', '.', 'M'},
-			{'.', 'A', '.'},
-			{'S', '.', 'M'},
-		},
-		{
-			{'S', '.', 'S'},
-			{'.', 'A', '.'},
-			{'M', '.', 'M'},
-		},
-	}
-	return patterns
-}
 func part2(grid [][]rune) {
 	fmt.Println("###### DAY 4 Part 2 ######")
-	//patterns := getPatterns()
 
 	tot := 0
 	for y := 0; y < len(grid)-2; y++ {
